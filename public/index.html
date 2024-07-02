@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/discord icon.ico" type="image/x-icon">
+    <title>Discord Clone</title>
+    <link rel="stylesheet" href="./output.css">
+</head> 
+<body class="font-ggSans">
+    <header class="bg-[#5965f2] ">
+        <nav class="flex justify-between px-8 md:px-16 py-8 items-center fixed md:static bg-[#5965f2] w-full">
+            <img src="./assets/discord-logo.svg" alt="" class="w-1/3 md:w-[10%]">
+
+            <div class="hidden md:inline-block ">
+                <ul class="text-white flex justify-between gap-14 font-semibold">
+                            <a href="#" class="hover:underline"> Download</a>
+                            <a href="#" class="hover:underline">Nitro</a>
+                            <a href="#" class="hover:underline">Safety</a>
+                            <a href="#" class="hover:underline">Support</a>
+                            <a href="#" class="hover:underline">Blog</a>
+                            <a href="#" class="hover:underline">Careers</a>
+                </ul>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <a href="#" class="bg-white font-bold text-sm md:text-black hover:text-[#5965f2] hover:shadow-lg text-[#5965f2] rounded-full px-4 py-2">Open Discord</a>
+                <div class="relative md:hidden" >
+                    <button id="menu-btn">
+                        <img src="./assets/hamburger.svg"  alt="">
+                    </button>
+                    <div id="menu-bar" class="absolute p-8 flex-col hidden rounded-lg h-[100vh] -top-10 w-[80vw] -right-10 bg-white">
+                        <div class="flex  justify-between items-center border-b pb-4">
+                            <img class="bg-black w-2/5" src="./assets/discord-logo.svg" alt="">
+                            <img class="w-1/6" id="close-btn" src="./assets/closebtn.svg" alt="">
+                        </div>
+
+                        <div class="flex flex-col gap-4 font-semibold">
+                            <a href="#">Download</a>
+                            <a href="#">Nitro</a>
+                            <a href="#">Safety</a>
+                            <a href="#">Support</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Careers</a>
+                        </div>
+
+                        <div class="mt-20">
+                            <a href="#" class="text-xl text-white flex justify-center items-center gap-3 bg-[#5965f2] rounded-full px-8 py-4">
+                                <svg width="24" height="24" viewBox="0 0 24 24" class="icon-2tQ9Jt"><g fill="currentColor"><path d="M17.707 10.708L16.293 9.29398L13 12.587V2.00098H11V12.587L7.70697 9.29398L6.29297 10.708L12 16.415L17.707 10.708Z"></path><path d="M18 18.001V20.001H6V18.001H4V20.001C4 21.103 4.897 22.001 6 22.001H18C19.104 22.001 20 21.103 20 20.001V18.001H18Z"></path></g></svg>
+                                Download</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </nav>
+
+        <div class="px-5 flex flex-col justify-center md:items-center">
+            <h1 class="pt-32 md:pt-20 text-2xl md:text-[56px] font-bold uppercase font-ginto text-white">imagine a place...</h1>
+            <p class="text-white mt-4 md:mt-10 mb-8 md:text-center md:w-1/2">...where you can belong to a school club, a gaming group, 
+                or a worldwide art community. Where just you and a handful
+                 of friends can spend time together. A place that makes it
+                  easy to talk every day and hang out more often.</p>
+            <a href="#" class="text-xl md:hidden flex items-center gap-3 bg-white rounded-full px-8 py-4">
+                <svg width="24" height="24" viewBox="0 0 24 24" class="icon-2tQ9Jt"><g fill="currentColor"><path d="M17.707 10.708L16.293 9.29398L13 12.587V2.00098H11V12.587L7.70697 9.29398L6.29297 10.708L12 16.415L17.707 10.708Z"></path><path d="M18 18.001V20.001H6V18.001H4V20.001C4 21.103 4.897 22.001 6 22.001H18C19.104 22.001 20 21.103 20 20.001V18.001H18Z"></path></g></svg>
+                Download from Google Play</a>
+
+            <div class="hidden md:flex justify-center items-center gap-5">
+                <a href="#" class="text-xl flex items-center gap-3 bg-white rounded-full px-8 py-4">
+                    <svg width="24" height="24" viewBox="0 0 24 24" class="icon-2tQ9Jt"><g fill="currentColor"><path d="M17.707 10.708L16.293 9.29398L13 12.587V2.00098H11V12.587L7.70697 9.29398L6.29297 10.708L12 16.415L17.707 10.708Z"></path><path d="M18 18.001V20.001H6V18.001H4V20.001C4 21.103 4.897 22.001 6 22.001H18C19.104 22.001 20 21.103 20 20.001V18.001H18Z"></path></g></svg>
+                    Download</a>
+                <a href="#" class="text-xl text-white flex items-center gap-3 bg-black rounded-full px-8 py-4">Open Discord in your browser</a>
+            </div>
+           
+            <img src="./assets/mobile-bgimg.svg" alt="" class="my-8 md:hidden">
+
+            <div class=" hidden md:flex w-fit">
+                <img src="./assets/mobile-bgimg.svg" alt="" class="my-8 w-1/3">
+                <img src="./assets/clouds.svg" alt="" class=" w-1/3">
+                <img src="./assets/desktopbg-img.svg" alt="" class="w-1/3">
+            </div>
+        </div>
+
+        
+    </header>
+
+    <section class="px-6 pt-14 pb-28 md:flex items-center justify-center transition ease-in delay-300 duration-500 transform">
+        <img src="./assets/invite-only.svg" alt="">
+        <div class="md:w-1/3">
+            <h2 class="my-6 text-2xl md:text-5xl font-bold font-ginto">Create an invite-only place where you belong</h2>
+            <p class="md:text-xl">Discord servers are organized into topic-based channels
+             where you can collaborate, share, and just talk about 
+             your day without clogging up a group chat.</p>
+        </div>
+       
+    </section>
+
+    <section class="px-6 py-14 md:flex-row-reverse bg-gray-100 md:flex items-center justify-center">
+        <img src="./assets/hanging-out.svg" alt="">
+        <div class="md:w-1/3">
+            <h2 class="my-6 text-2xl md:text-5xl font-bold font-ginto">Where hanging out is easy</h2>
+            <p class="md:text-xl">Grab a seat in a voice channel when you’re free. Friends in your
+                 server can see you’re around and 
+                 instantly pop in to talk without having to call.</p>
+        </div>
+       
+    </section>
+
+    <section class="px-6 pt-14 pb-28 md:flex items-center justify-center">
+        <img src="./assets/invite-only.svg" alt="">
+        <div class="md:w-1/3">
+            <h2 class="my-6 text-2xl md:text-5xl font-bold font-ginto">From few to a fandom</h2>
+            <p class="md:text-xl">Get any community running with moderation tools and custom member access.
+                 Give members special powers, set up private channels, and more.</p>
+        </div>
+      
+    </section>
+
+    <section class="bg-gray-100 text-center flex flex-col items-center px-6 py-14">
+        <h2 class="uppercase text-4xl md:text-5xl font-ginto">reliable tech for staying close</h2>
+        <p class="my-5 md:text-xl md:w-3/4 md:text-center">
+            Low-latency voice and video feels like you’re in 
+            the same room. Wave hello over video, watch friends
+             stream their games, or gather up and have a drawing
+              session with screen share.
+        </p>
+        <img src="./assets/reliable tech.svg" alt="">
+
+        <h2 class="font-ginto text-2xl">Ready to start your journey?</h2>
+        <a href="#" class="text-xl mt-12 gap-10 font-bold justify-center flex items-center text-white bg-[#5965f2] rounded-full px-8 py-4">
+            <svg width="24" height="24" viewBox="0 0 24 24" class="icon-2tQ9Jt"><g fill="currentColor"><path d="M17.707 10.708L16.293 9.29398L13 12.587V2.00098H11V12.587L7.70697 9.29398L6.29297 10.708L12 16.415L17.707 10.708Z"></path><path d="M18 18.001V20.001H6V18.001H4V20.001C4 21.103 4.897 22.001 6 22.001H18C19.104 22.001 20 21.103 20 20.001V18.001H18Z"></path></g></svg>
+            Download for Windows</a>    
+        </section>
+
+    <footer class="bg-black text-white pt-20 pb-12 px-6 md:px-20">
+        <div class="md:flex justify-around md:border-b md:border-[#5965f2]">
+            <div>
+                <select name="" id="" class="bg-transparent">
+                    <option value=""><img src="./assets/english.png" alt="">English</option>
+                </select>
+        
+                <div class="flex gap-5 my-4">
+                    <a href=""><img src="./assets/twitterX.svg" alt=""></a>
+                    <a href=""><img src="./assets/instagram.svg" alt=""></a>
+                    <a href=""><img src="./assets/facebook.svg" alt=""></a>
+                    <a href=""><img src="./assets/youtube.svg" alt=""></a>
+                    <a href=""><img src="./assets/tiktok.svg" alt=""></a>
+                </div>
+            </div>
+           
+    
+          <div class="grid grid-cols-2 md:grid-cols-4 border-b pb-8 border-[#5965f2] md:border-none">
+            <div class="flex flex-col gap-3">
+                <a href="#" class="text-[#5965f2] my-4">Product</a>
+                <a href="#">Download</a>
+                <a href="#">Nitro</a>
+                <a href="#">Status</a>
+                <a href="#">App Directory</a>
+                <a href="#">New Mobile Experience</a>
+            </div>
+    
+            <div class="flex flex-col gap-3">
+                <a href="#" class="text-[#5965f2] my-4">Company</a>
+                <a href="#">About</a>
+                <a href="#">Jobs</a>
+                <a href="#">Brand</a>
+                <a href="#">Newsroom</a>
+            </div>
+    
+            <div class="flex flex-col gap-3">
+                <a href="#" class="text-[#5965f2] my-4">Resources</a>
+                <a href="#">College</a>
+                <a href="#">Support</a>
+                <a href="#">Safety</a>
+                <a href="#">Blog</a>
+                <a href="#">Feedback</a>
+                <a href="#">StreamKit</a>
+                <a href="#">Creators</a>
+                <a href="#">Community</a>
+                <a href="#">Developers</a>
+                <a href="#">Gaming</a>
+                <a href="#">Quests</a>
+                <a href="#">Official 3rd Party Merch</a>
+            </div>
+    
+            <div class="flex flex-col gap-3">
+                <a href="#" class="text-[#5965f2] my-4">Policies</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Cookie Settings</a>
+                <a href="#">Guidelines</a>
+                <a href="#">Acknowledgements</a>
+                <a href="#">Licenses</a>
+                <a href="#">Company Information</a>
+            </div>
+          </div>
+        </div>
+       
+
+      <div class="flex justify-between items-center mt-8">
+        <img src="./assets/discord-logo.svg" alt="" class="w-2/5 md:w-[10%] ">
+        <a href="#" class="bg-[#5965f2] rounded-full px-4 py-2 font-bold">Download</a>
+      </div>
+    </footer>
+</body>
+</html>
